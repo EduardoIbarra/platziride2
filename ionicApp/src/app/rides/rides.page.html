@@ -1,9 +1,18 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>rides</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title>Rides</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content color="dark">
+  <ion-card *ngFor="let ride of rides | async" color="light">
+    <img src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
+    <ion-card-header>
+      <ion-card-subtitle>Destino</ion-card-subtitle>
+      <ion-card-title>{{ride.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Rodamos el <b>{{ride.start | date}}</b></p>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

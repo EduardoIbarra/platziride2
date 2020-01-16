@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {RideService} from '../services/ride';
+import {Ride} from '../models/ride';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-rides',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rides.page.scss'],
 })
 export class RidesPage implements OnInit {
-
-  constructor() { }
+  rides: Observable<[Ride]>;
+  constructor(
+      private rideService: RideService,
+  ) { }
 
   ngOnInit() {
+    this.getRides();
   }
 
+  async getRides () {
+    this.rides = await this.rideService.getAll();
+  }
 }
