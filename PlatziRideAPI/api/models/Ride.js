@@ -12,7 +12,21 @@ module.exports = {
     //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
     //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
     //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
-
+    title: {
+      type: 'string',
+      required: true,
+      minLength: 2,
+    },
+    start: {
+      type: 'string',
+      required: true,
+    },
+    end: {
+      type: 'string',
+    },
+    wayPoints: {
+      type: 'json',
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
