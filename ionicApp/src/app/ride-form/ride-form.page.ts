@@ -4,8 +4,6 @@ import {RideService} from '../services/ride';
 import {NavController} from '@ionic/angular';
 import {ActivatedRoute} from '@angular/router';
 
-declare const google: any;
-
 @Component({
   selector: 'app-ride-form',
   templateUrl: './ride-form.page.html',
@@ -15,9 +13,6 @@ export class RideFormPage implements OnInit {
   ride: Ride = DEFAULT_RIDE_OBJECT;
   id: string;
   editing = false;
-  masterWayPoint: string;
-  wayPoints = [];
-  legs = [];
   constructor(
       private rideService: RideService,
       private navCtrl: NavController,

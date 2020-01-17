@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef775675-155e-4d47-9147-c28c9232a15e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/services/ride.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/services/ride.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state>
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+            <state relative-caret-position="75">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -51,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ionicApp/src/app/services/ride.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="285">
+              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -95,9 +104,9 @@
         <option value="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/services/helpers.ts" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/services/ride.ts" />
-        <option value="$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.html" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" />
+        <option value="$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts" />
       </list>
     </option>
   </component>
@@ -224,7 +233,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10411000" />
+    <option name="totallyTimeSpent" value="10418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -320,8 +329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -355,16 +364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ionicApp/src/app/services/helpers.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ionicApp/src/app/services/helpers.ts" />
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/models/ride.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -374,8 +374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/services/ride.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="285">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -384,8 +384,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/ride-form/ride-form.page.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="41" column="3" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
@@ -401,8 +401,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state>
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
         </state>
       </provider>
     </entry>
