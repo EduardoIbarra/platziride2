@@ -17,4 +17,10 @@ export class RideService {
   public getAll(): Observable<[Ride]> {
     return this.http.get(`${this.url}${this.modelUrl}`) as Observable<[Ride]>;
   }
+  public update(ride: Ride) {
+    return this.http.patch(`${this.url}${this.modelUrl}/${ride.id}`, ride);
+  }
+  public getById(id: string): Observable<Ride> {
+    return this.http.get(`${this.url}${this.modelUrl}/${id}`) as Observable<Ride>;
+  }
 }

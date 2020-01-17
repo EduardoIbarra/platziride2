@@ -15,9 +15,6 @@ export class RideFormPage implements OnInit {
   ride: Ride = DEFAULT_RIDE_OBJECT;
   id: string;
   editing = false;
-  masterWayPoint: string;
-  wayPoints = [];
-  legs = [];
   constructor(
       private rideService: RideService,
       private navCtrl: NavController,
@@ -27,11 +24,21 @@ export class RideFormPage implements OnInit {
   ngOnInit() {
     this.id = this.activatedRoute.snapshot.paramMap.get('id');
     this.editing = (this.id !== 'new');
+    if (this.editing) {
+      this.rideService.getById(this.id).subscribe((result: Ride) => {
+        this.ride = result;
+      });
+    }
   }
 
   save() {
     if (this.editing) {
-      // Cosas acerca de editar
+      this.rideService.update(this.ride as Ride).subscribe(() => {
+        this.navCtrl.pop();
+      }, (error) => {
+        console.log(error);
+      });
+      return;
     } else {
       this.rideService.create(this.ride as Ride).subscribe(() => {
         this.navCtrl.pop();

@@ -23,6 +23,10 @@
     </ion-card-header>
     <ion-card-content>
       <p>Rodamos el <b>{{ride.start | date}}</b></p>
+      <ion-item routerLink="/ride-form/{{ride.id}}">
+        <ion-icon name="create" slot="start"></ion-icon>
+        <ion-label>Editar</ion-label>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 </ion-content>
