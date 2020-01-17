@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ride</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-list *ngIf="ride">
+    <ion-item color="dark">
+      <ion-label>Título</ion-label>
+      <ion-input [(ngModel)]="ride.title"></ion-input>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-label>Partida</ion-label>
+      <ion-datetime [(ngModel)]="ride.start" displayFormat="D MMM YYYY H:mm" min="2020" max="2021"></ion-datetime>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="ion-activatable" expand="block" (click)="save()" color="secondary">
+    Guardar
+    <ion-ripple-effect></ion-ripple-effect>
+  </ion-button>
+</ion-content>

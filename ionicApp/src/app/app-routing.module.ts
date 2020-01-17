@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'ride',
     loadChildren: () => import('./ride/ride.module').then( m => m.RidePageModule)
+  },
+  {
+    path: 'ride-form/:id',
+    loadChildren: () => import('./ride-form/ride-form.module').then( m => m.RideFormPageModule)
   }
 ];
 

@@ -11,6 +11,9 @@ export class RideService {
   constructor(
       private http: HttpClient
   ) {}
+  public create(ride: Ride) {
+    return this.http.post(`${this.url}${this.modelUrl}`, ride);
+  }
   public getAll(): Observable<[Ride]> {
     return this.http.get(`${this.url}${this.modelUrl}`) as Observable<[Ride]>;
   }
