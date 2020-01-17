@@ -23,4 +23,7 @@ export class RideService {
   public getById(id: string): Observable<Ride> {
     return this.http.get(`${this.url}${this.modelUrl}/${id}`) as Observable<Ride>;
   }
+  public remove(id: string) {
+    return this.http.delete(`${this.url}${this.modelUrl}/${id}`);
+  }
 }

@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {RideService} from './services/ride';
 import {HttpClientModule} from '@angular/common/http';
+import {HelpersService} from './services/helpers';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,7 +25,8 @@ import {HttpClientModule} from '@angular/common/http';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    RideService
+    RideService,
+    HelpersService,
   ],
   bootstrap: [AppComponent]
 })
