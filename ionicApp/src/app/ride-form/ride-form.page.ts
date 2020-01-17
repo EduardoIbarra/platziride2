@@ -4,8 +4,6 @@ import {RideService} from '../services/ride';
 import {NavController} from '@ionic/angular';
 import {ActivatedRoute} from '@angular/router';
 
-declare const google: any;
-
 @Component({
   selector: 'app-ride-form',
   templateUrl: './ride-form.page.html',
