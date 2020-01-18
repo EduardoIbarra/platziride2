@@ -21,9 +21,9 @@ module.exports = {
         password: joi.string().required(),
       });
       const {email, password} = await joi.validate(req.allParams(), schema);
-      const encryptedPassword = await bcrypt.hash(password, saltRound);
+      const hashedPassword = await bcrypt.hash(password, saltRound);
       // USE WITHOUT AWAIT FIRST *************
-      const user = await User.create({email, password: encryptedPassword}).fetch();
+      const user = await User.create({email, password: hashedPassword}).fetch();
       return res.ok(user);
     } catch (err) {
       if (err.name === 'ValidationError') {
