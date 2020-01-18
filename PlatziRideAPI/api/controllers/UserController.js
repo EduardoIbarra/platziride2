@@ -48,7 +48,8 @@ module.exports = {
         return res.notFound({err: 'User not found'});
       }
       const comparedPassword = await bcrypt.compare(password, user.password);
-      return (comparedPassword) ? res.ok(user) : res.badRequest({err: 'Unauthorized'});
+      const token = AuthenticationService.JWTIssuer({user: user.id}, '1 day');
+      return (comparedPassword) ? res.ok({token}) : res.badRequest({err: 'Unauthorized'});
     } catch (err) {
       if (err.name === 'ValidationError') {
         return res.badRequest({err}).json();
