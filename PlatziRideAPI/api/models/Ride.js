@@ -27,6 +27,9 @@ module.exports = {
     wayPoints: {
       type: 'json',
     },
+    user: {
+      model: 'user'
+    },
 
     //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
     //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
