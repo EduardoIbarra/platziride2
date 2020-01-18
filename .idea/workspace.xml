@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ef775675-155e-4d47-9147-c28c9232a15e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/config/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/config/routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,55 +17,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html">
+        <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/models/User.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="330">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts">
+        <entry file="file://$PROJECT_DIR$/PlatziRideAPI/config/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/services/ride.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.html">
+        <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
+              <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -104,6 +74,8 @@
         <option value="$PROJECT_DIR$/ionicApp/src/app/ride/ride.page.html" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/rides/rides.page.html" />
         <option value="$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/PlatziRideAPI/api/models/User.js" />
+        <option value="$PROJECT_DIR$/PlatziRideAPI/config/routes.js" />
       </list>
     </option>
   </component>
@@ -129,65 +101,27 @@
             <path>
               <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
               <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ride" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ride-form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="rides" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
-              <item name="ionicApp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
               <item name="platziride2" type="462c0819:PsiDirectoryNode" />
               <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
+              <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
+              <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
@@ -234,12 +168,12 @@
       <updated>1579141304714</updated>
       <workItem from="1579141306334" duration="8267000" />
       <workItem from="1579222891429" duration="2845000" />
-      <workItem from="1579315602471" duration="1543000" />
+      <workItem from="1579315602471" duration="3992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13420000" />
+    <option name="totallyTimeSpent" value="15869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -430,11 +364,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ionicApp/src/app/app-routing.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="345">
+          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatziRideAPI/config/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
