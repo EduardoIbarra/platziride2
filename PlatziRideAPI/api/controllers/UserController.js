@@ -18,8 +18,9 @@ module.exports = {
         email: joi.string().required().email(),
         password: joi.string().required(),
       });
-      const params = await joi.validate(req.allParams(), schema);
-      return res.ok(params);
+      const {email, password} = await joi.validate(req.allParams(), schema);
+      const user = await User.create({email, password}).fetch();
+      return res.ok(user);
     } catch (err) {
       if (err.name === 'ValidationError') {
         return res.badRequest({err}).json();

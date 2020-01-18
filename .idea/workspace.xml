@@ -4,8 +4,6 @@
     <list default="true" id="ef775675-155e-4d47-9147-c28c9232a15e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            <state relative-caret-position="420">
+              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -171,12 +169,12 @@
       <updated>1579141304714</updated>
       <workItem from="1579141306334" duration="8267000" />
       <workItem from="1579222891429" duration="2845000" />
-      <workItem from="1579315602471" duration="4988000" />
+      <workItem from="1579315602471" duration="5605000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16865000" />
+    <option name="totallyTimeSpent" value="17482000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
@@ -391,8 +389,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        <state relative-caret-position="420">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
