@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef775675-155e-4d47-9147-c28c9232a15e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlatziRideAPI/config/policies.js" beforeDir="false" afterPath="$PROJECT_DIR$/PlatziRideAPI/config/policies.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +24,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
               <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/policies/isLoggedIn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PlatziRideAPI/config/policies.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -80,6 +95,8 @@
         <option value="$PROJECT_DIR$/PlatziRideAPI/config/routes.js" />
         <option value="$PROJECT_DIR$/PlatziRideAPI/api/services/AuthenticationService.js" />
         <option value="$PROJECT_DIR$/PlatziRideAPI/api/controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/PlatziRideAPI/api/policies/isLoggedIn.js" />
+        <option value="$PROJECT_DIR$/PlatziRideAPI/config/policies.js" />
       </list>
     </option>
   </component>
@@ -126,6 +143,13 @@
               <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="platziride2" type="462c0819:PsiDirectoryNode" />
+              <item name="PlatziRideAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="policies" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="platziride2" type="b2602c69:ProjectViewProjectNode" />
@@ -192,18 +216,18 @@
       <updated>1579141304714</updated>
       <workItem from="1579141306334" duration="8267000" />
       <workItem from="1579222891429" duration="2845000" />
-      <workItem from="1579315602471" duration="7777000" />
+      <workItem from="1579315602471" duration="8164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19654000" />
+    <option name="totallyTimeSpent" value="20041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -216,7 +240,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -435,6 +459,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="47" column="36" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatziRideAPI/api/policies/isLoggedIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="62" lean-forward="true" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlatziRideAPI/config/policies.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
