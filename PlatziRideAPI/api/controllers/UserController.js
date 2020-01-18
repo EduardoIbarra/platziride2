@@ -4,17 +4,28 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
+const joi = require('joi');
 
 module.exports = {
-  
+
 
   /**
    * `UserController.signup()`
    */
   signup: async function (req, res) {
-    return res.json({
-      todo: 'signup() is not implemented yet!'
-    });
+    try {
+      const schema = joi.object().keys({
+        email: joi.string().required().email(),
+        password: joi.string().required(),
+      });
+      const params = await joi.validate(req.allParams(), schema);
+      return res.ok(params);
+    } catch (err) {
+      if (err.name === 'ValidationError') {
+        return res.badRequest({err}).json();
+      }
+      return res.serverError(err).json();
+    }
   },
 
   /**
