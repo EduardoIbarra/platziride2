@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./rides/rides.module').then( m => m.RidesPageModule)
   },
   {
-    path: 'ride',
+    path: 'ride/:id',
     loadChildren: () => import('./ride/ride.module').then( m => m.RidePageModule)
   },
   {

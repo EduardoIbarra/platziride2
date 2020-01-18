@@ -17,7 +17,7 @@
 <ion-content color="dark">
   <ion-card *ngFor="let ride of rides | async" color="light">
     <img src="https://ionicframework.com/docs/demos/api/card/madison.jpg" />
-    <ion-card-header>
+    <ion-card-header routerLink="/ride/{{ride.id}}">
       <ion-card-subtitle>Destino</ion-card-subtitle>
       <ion-card-title>{{ride.title}}</ion-card-title>
     </ion-card-header>
