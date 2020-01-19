@@ -25,6 +25,15 @@
         <ion-icon name="trash" slot="start"></ion-icon>
         <ion-label>Eliminar</ion-label>
       </ion-item>
+
+      <ion-list *ngIf="ride?.wayPoints">
+        <ion-item color="dark" *ngFor="let leg of ride.wayPoints">
+          <ion-label class="ion-text-wrap">
+            <b>{{leg.start_address}} => {{leg.end_address}}</b>
+            <p>{{leg.distance.text}} | {{leg.duration.text}}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
     </ion-card-content>
   </ion-card>
 </ion-content>

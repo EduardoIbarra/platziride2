@@ -4,6 +4,8 @@ import {RideService} from '../services/ride';
 import {NavController} from '@ionic/angular';
 import {ActivatedRoute} from '@angular/router';
 
+declare const google: any;
+
 @Component({
   selector: 'app-ride-form',
   templateUrl: './ride-form.page.html',
@@ -15,6 +17,7 @@ export class RideFormPage implements OnInit {
   editing = false;
   masterWayPoint: string;
   wayPoints = [];
+  legs = [];
   constructor(
       private rideService: RideService,
       private navCtrl: NavController,
@@ -51,7 +54,41 @@ export class RideFormPage implements OnInit {
   addWayPoint() {
     this.wayPoints.push(this.masterWayPoint);
     this.masterWayPoint = '';
-    this.ride.wayPoints = this.wayPoints;
-    console.log(this.ride);
+    this.getDistances();
+  }
+
+  public getDistances() {
+    let thisWayPoints = this.wayPoints.slice(1, -1);
+    thisWayPoints = thisWayPoints.map((wp) => ({location: wp, stopover: true}));
+    if (this.wayPoints.length < 2) {
+      return;
+    }
+    const directionsService = new google.maps.DirectionsService();
+    const request = {
+      origin: this.wayPoints[0],
+      waypoints: thisWayPoints,
+      destination: this.wayPoints[this.wayPoints.length - 1],
+      travelMode: 'DRIVING',
+      drivingOptions: {
+        departureTime: new Date(this.ride.start),
+        trafficModel: 'bestguess'
+      },
+      unitSystem: google.maps.UnitSystem.METRIC
+    };
+    directionsService.route(request, (result, status) => {
+      this.legs = result.routes[0].legs;
+      this.ride.wayPoints = [];
+      this.legs.forEach((leg) => {
+        this.ride.wayPoints.push({
+          start_address: leg.start_address,
+          start_location: {lat: leg.start_location.lat(), lng: leg.start_location.lng()},
+          end_address: leg.end_address,
+          end_location: {lat: leg.end_location.lat(), lng: leg.end_location.lng()},
+          distance: leg.distance,
+          duration: leg.duration,
+        });
+      });
+      console.log(this.ride);
+    });
   }
 }
