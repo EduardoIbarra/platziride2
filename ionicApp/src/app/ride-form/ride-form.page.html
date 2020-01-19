@@ -17,7 +17,24 @@
       <ion-label>Partida</ion-label>
       <ion-datetime [(ngModel)]="ride.start" displayFormat="D MMM YYYY H:mm" min="2020" max="2021"></ion-datetime>
     </ion-item>
+    <ion-item color="dark">
+      <ion-label>Agregar Punto a la Ruta</ion-label>
+    </ion-item>
+    <ion-item color="dark">
+      <ion-input placeholder="Ejemplo: Gasolinera Renault" [(ngModel)]="masterWayPoint"></ion-input>
+      <ion-button clear item-right (click)="addWayPoint()">OK</ion-button>
+    </ion-item>
   </ion-list>
+
+  <ion-content color="dark" id="way-points-container" padding>
+    <ion-list>
+      <ion-item color="dark" *ngFor="let wayPoint of wayPoints">
+        <ion-label class="ion-text-wrap">
+          {{wayPoint}}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
 
   <ion-button class="ion-activatable" expand="block" (click)="save()" color="secondary">
     Guardar
