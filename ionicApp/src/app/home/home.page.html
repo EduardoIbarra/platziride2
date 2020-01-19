@@ -22,11 +22,21 @@
       <ion-label>Password</ion-label>
       <ion-input [(ngModel)]="credential.password" type="password"></ion-input>
     </ion-item>
+    <ion-item color="dark" *ngIf="!isLoggingIn">
+      <ion-label>Confirmar Password</ion-label>
+      <ion-input [(ngModel)]="credential.passwordConfirm" type="password"></ion-input>
+    </ion-item>
   </ion-list>
   <div class="ion-padding">
     <ion-button class="ion-activatable" expand="block" (click)="login()">
       Ingresar
       <ion-ripple-effect></ion-ripple-effect>
     </ion-button>
+    <p *ngIf="!isLoggingIn">
+      Ya tienes una cuenta? <a (click)="toggleLogin()">Click Aquí</a>
+    </p>
+    <p *ngIf="isLoggingIn">
+      Aun no tienes cuenta? <a (click)="toggleLogin()">Click Aquí</a>
+    </p>
   </div>
 </ion-content>

@@ -11,13 +11,30 @@ import {AuthenticationService} from '../services/authentication';
 })
 export class HomePage {
   credential: Credential = DEFAULT_CREDENTIAL_OBJECT;
+  isLoggingIn = true;
   constructor(
       private rideService: RideService,
       private navCtrl: NavController,
       private authenticationService: AuthenticationService,
   ) {}
+  public toggleLogin = () => {
+    this.isLoggingIn = !this.isLoggingIn;
+  };
   public login = () => {
-    this.doLogin();
+    if (this.isLoggingIn) {
+      this.doLogin();
+    } else {
+      if (this.credential.password !== this.credential.passwordConfirm) {
+        alert('Los passwords no coinciden');
+        return;
+      }
+      this.authenticationService.signup({email: this.credential.email, password: this.credential.password}).subscribe((data) => {
+        console.log(data);
+        this.doLogin();
+      }, (error) => {
+        console.log(error);
+      });
+    }
   };
   doLogin() {
     this.authenticationService.login({email: this.credential.email, password: this.credential.password}).subscribe((data: any) => {
