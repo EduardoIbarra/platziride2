@@ -9,8 +9,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import {RideService} from './services/ride';
-import {HttpClientModule} from '@angular/common/http';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HelpersService} from './services/helpers';
+import {AuthenticationService} from './services/authentication';
+import {TokenInterceptorService} from './services/tokenInterceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +29,8 @@ import {HelpersService} from './services/helpers';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     RideService,
     HelpersService,
+    AuthenticationService,
+    {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true},
   ],
   bootstrap: [AppComponent]
 })
