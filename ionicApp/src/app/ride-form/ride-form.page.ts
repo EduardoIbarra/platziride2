@@ -3,6 +3,7 @@ import {DEFAULT_RIDE_OBJECT, Ride} from '../models/ride';
 import {RideService} from '../services/ride';
 import {NavController} from '@ionic/angular';
 import {ActivatedRoute} from '@angular/router';
+import {WeatherService} from '../services/weather';
 
 declare const google: any;
 
@@ -22,6 +23,7 @@ export class RideFormPage implements OnInit {
       private rideService: RideService,
       private navCtrl: NavController,
       private activatedRoute: ActivatedRoute,
+      private weatherService: WeatherService,
   ) { }
 
   ngOnInit() {
@@ -79,13 +81,21 @@ export class RideFormPage implements OnInit {
       this.legs = result.routes[0].legs;
       this.ride.wayPoints = [];
       this.legs.forEach((leg) => {
-        this.ride.wayPoints.push({
-          start_address: leg.start_address,
-          start_location: {lat: leg.start_location.lat(), lng: leg.start_location.lng()},
-          end_address: leg.end_address,
-          end_location: {lat: leg.end_location.lat(), lng: leg.end_location.lng()},
-          distance: leg.distance,
-          duration: leg.duration,
+        const startLocation = {lat: leg.start_location.lat(), lng: leg.start_location.lng()};
+        const endLocation = {lat: leg.end_location.lat(), lng: leg.end_location.lng()};
+        this.weatherService.getWeather(startLocation).subscribe((data: any) => {
+          console.log(data.main);
+          this.ride.wayPoints.push({
+            start_address: leg.start_address,
+            start_location: startLocation,
+            end_address: leg.end_address,
+            end_location: endLocation,
+            distance: leg.distance,
+            duration: leg.duration,
+            weather: data.main,
+          });
+        }, (error) => {
+          console.log(error);
         });
       });
       console.log(this.ride);

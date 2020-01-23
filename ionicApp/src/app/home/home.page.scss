@@ -2,3 +2,10 @@
   max-height: 35vh;
   overflow: hidden;
 }
+#logo-container {
+  text-align: center;
+  img {
+    width: 60%;
+    margin: 15px 0 15px 0;
+  }
+}

@@ -13,6 +13,7 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {HelpersService} from './services/helpers';
 import {AuthenticationService} from './services/authentication';
 import {TokenInterceptorService} from './services/tokenInterceptor';
+import {WeatherService} from './services/weather';
 
 @NgModule({
   declarations: [AppComponent],
@@ -31,6 +32,7 @@ import {TokenInterceptorService} from './services/tokenInterceptor';
     HelpersService,
     AuthenticationService,
     {provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true},
+    WeatherService,
   ],
   bootstrap: [AppComponent]
 })

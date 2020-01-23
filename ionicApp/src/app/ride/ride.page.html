@@ -31,6 +31,7 @@
           <ion-label class="ion-text-wrap">
             <b>{{leg.start_address}} => {{leg.end_address}}</b>
             <p>{{leg.distance.text}} | {{leg.duration.text}}</p>
+            <p *ngIf="leg?.weather">Actual <b>{{leg.weather.temp}}ºC</b> | Min <b>{{leg.weather.temp_min}}ºC</b> | Max <b>{{leg.weather.temp_max}}ºC</b></p>
           </ion-label>
         </ion-item>
       </ion-list>
