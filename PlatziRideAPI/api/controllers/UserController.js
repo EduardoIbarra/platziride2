@@ -4,7 +4,7 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
-const joi = require('joi');
+const joi = require('@hapi/joi');
 const bcrypt = require('bcrypt');
 const saltRound = 10;
 
@@ -16,11 +16,13 @@ module.exports = {
    */
   signup: async function (req, res) {
     try {
-      const schema = joi.object().keys({
+      const schema = joi.object({
         email: joi.string().required().email(),
-        password: joi.string().required(),
+        password: joi.string().required()
       });
-      const {email, password} = await joi.validate(req.allParams(), schema);
+
+
+      const {email, password} = await schema.validateAsync(req.allParams());
       const hashedPassword = await bcrypt.hash(password, saltRound);
       // USE WITHOUT AWAIT FIRST *************
       const user = await User.create({email, password: hashedPassword}).fetch();
@@ -38,11 +40,11 @@ module.exports = {
    */
   login: async function (req, res) {
     try {
-      const schema = joi.object().keys({
+      const schema = joi.object({
         email: joi.string().required().email(),
-        password: joi.string().required(),
+        password: joi.string().required()
       });
-      const {email, password} = await joi.validate(req.allParams(), schema);
+      const {email, password} = await schema.validateAsync(req.allParams());
       const user = await User.findOne({email});
       if (!user) {
         return res.notFound({err: 'User not found'});
